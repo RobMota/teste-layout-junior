@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.utilcss {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---header--- */
+header {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---header nav--- */
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---header banner--- */
+header .header-banner {
+  background-image: url("../img/bg-img.png");
+  height: 700px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 836px;
+  border: 1px solid black;
+  width: 100%;
+  position: relative;
+}
+
+header .header-text {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header .header-text .icon-logo {
+  background-image: url("../img/mountain.svg");
+  display: inline-block;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  transform: scaleX(-1);
+}
+
+header .header-text span {
+  color: white;
+  font-size: 1.5em;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: -15px;
+}
+
+header .header-text h1 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+header .header-text button {
+  margin-top: 60px;
+  width: 250px;
+  border: none;
+  background-color: white;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header .header-text button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+header .header-text a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --- Categories --- */
+main .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0 50px;
+}
+
+main .categories .categories-text {
+  width: 100%;
+  padding: 20px 0;
+}
+
+article h2,
+main section.growth-plans .growth-plans-text h2,
+main .categories .categories-text h1 {
+  font-size: 3.2em;
+  font-weight: 600;
+}
+
+article p,
+main section.growth-plans .growth-plans-text p,
+main .categories .categories-text p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+article {
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+  position: relative;
+  color: white;
+}
+
+.w30 {
+  width: 33%;
+}
+
+.w60 {
+  width: 64%;
+}
+
+.nature,
+.pictures,
+.daily,
+.analysis,
+.together {
+  background-size: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.nature {
+  background-image: url("../img/nature.png");
+}
+
+.daily {
+  background-image: url("../img/daily.png");
+}
+
+.together {
+  background-image: url("../img/together.png");
+  width: 100%;
+  justify-content: center;
+}
+
+.analysis {
+  background-image: url("../img/analysis.png");
+  text-align: right;
+}
+
+.pictures {
+  background-image: url("../img/pictures.png");
+}
+
+.nature:hover,
+.pictures:hover,
+.daily:hover,
+.analysis:hover,
+.together:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* --- growth plans --- */
+section.growth-plans {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 10px 0 70px;
+  height: 650px;
+}
+
+main section.growth-plans .growth-plans-text {
+  position: absolute;
+  margin-top: 100px;
+}
+
+main section.growth-plans .columns {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main section.growth-plans .columns .colu {
+  width: 170px;
+}
+
+main section.growth-plans .columns .colu .head-colu {
+  background-color: #005499;
+}
+
+main section.growth-plans .columns .colu .body-colu,
+main section.growth-plans .columns .colu .head-colu {
+  padding: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+main section.growth-plans .columns .colu .head-colu p {
+  font-size: 2em;
+  margin-bottom: -10px;
+}
+
+main section.growth-plans .columns .colu .head-colu span {
+  font-size: 1.2em;
+}
+
+main section.growth-plans .columns .colu .body-colu {
+  background-color: #0088ed;
+  display: flex;
+  align-items: flex-end;
+  height: 80px;
+  transition: height 2s ease;
+}
+
+main section.growth-plans .columns .colu .body-colu p {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+main section.growth-plans .columns .colu:nth-child(1) .body-colu.animate {
+  height: 100px;
+}
+
+main section.growth-plans .columns .colu:nth-child(2) .body-colu.animate {
+  height: 150px;
+}
+
+main section.growth-plans .columns .colu:nth-child(3) .body-colu.animate {
+  height: 200px;
+}
+
+main section.growth-plans .columns .colu:nth-child(4) .body-colu.animate {
+  height: 250px;
+}
+
+main section.growth-plans .columns .colu:nth-child(5) .body-colu.animate {
+  height: 300px;
+}
+
+main section.growth-plans .columns .colu:nth-child(6) .body-colu.animate {
+  height: 350px;
+}
+
+/* --- footer --- */
+footer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer h2 {
+  font-size: 1.2em;
+}
